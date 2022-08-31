@@ -12,7 +12,6 @@ passport.use(
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
       callbackURL: "http://localhost:3001/google/callback",
-      // callbackURL: "https://tu-naaks-2020.herokuapp.com/google/callback",
       passReqToCallback: true,
     },
     function (request, accessToken, refreshToken, profile, done) {
