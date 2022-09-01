@@ -11,7 +11,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "http://localhost:3001/google/callback",
+      callbackURL: "https://shrouded-anchorage-27129.herokuapp.com/",
       passReqToCallback: true,
     },
     function (request, accessToken, refreshToken, profile, done) {
